@@ -7,8 +7,8 @@ import keras
 from keras.preprocessing.sequence import pad_sequences
 
 import nltk
-nltk.download("punkt")
-nltk.download("wordnet")
+#nltk.download("punkt")
+#nltk.download("wordnet")
 stopwords = nltk.corpus.stopwords.words('english')
 from nltk.stem import WordNetLemmatizer 
 lemmatizer = WordNetLemmatizer()

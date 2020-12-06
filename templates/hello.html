@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/bootstrap.min.css">
+		<title>Sentiment Demo</title>
+	</head>
+</html>
+<body>
+	<form action="{{url_for('index')}}" method="post">
+		<div style="width:600px;margin-left:60px;">
+			<div>
+				<div><h4>Input a review </h4></div>
+				<div class="form-group">
+					<textarea style="resize:none; width:300px" class="form-control" name="text" rows="6" cols="80" >{{ text }}</textarea>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary" type="submit">Check sentiment</button>
+					<div style="display:inline-block">{{ prediction_message }}</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
